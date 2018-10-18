@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; // simple component
 import FaThumbsUp from 'react-icons/lib/fa/thumbs-up'
 import FaThumbsDown from 'react-icons/lib/fa/thumbs-down'
 
 export default class ClassComponentDemo extends Component {
-    constructor(props) {
+   constructor(props) {
         super(props);
         this.state = { incrementCount: 0, decrementCount: 0 };
     }
@@ -64,3 +64,7 @@ const ClassComponentNotes = function () {
     );
 };
 
+//state is all about the interactivity and driven by changes in the DOM,
+// we set an initial state in the constructor of this.state
+// if something were to change we us the setState() method
+// we use that method for event handlers to update the page
